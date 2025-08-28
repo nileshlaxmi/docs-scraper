@@ -47,5 +47,5 @@ async function scrapeChapter(url) {
     const filename = title.replace(/[^\w\s-]/g, "").replace(/\s+/g, "_");
     fs.writeFileSync(path.join(OUTPUT_DIR, filename + ".md"), content, "utf-8");
 
-    console.log(`✅ Saved: ${title}`);
+    console.log(`✅ Saved: ${title} `);
 }
